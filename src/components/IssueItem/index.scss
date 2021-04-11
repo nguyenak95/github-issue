@@ -1,0 +1,23 @@
+.issue__item {
+  border: 5px solid;
+  margin: 0.5em 0;
+  padding: 0.5em;
+  list-style: none;
+  font-weight: 600;
+  &.open {
+    border-color: var(--success);
+    &:hover {
+      background: var(--success);
+    }
+  }
+  &.closed {
+    border-color: var(--secondary);
+    text-decoration: line-through;
+    &:hover {
+      background: var(--secondary);
+    }
+  }
+  &:hover {
+    color: white;
+  }
+}
